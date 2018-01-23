@@ -18,12 +18,20 @@ public class UD3N {
      */
     
     public static int division (int numerador, int denominador){
-        return (numerador/denominador);
+        int resultado=0;
+        try{
+        resultado=(numerador/denominador);
+        
+        }catch (Exception e){
+            System.out.println("se ha producido un error: "+e.getMessage());
+                    
+        }
+        return resultado;
     }
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("resultado de la operación: "+division(2,3));
+        System.out.println("resultado de la operación: "+division(6,0));
                 
     }
 }
